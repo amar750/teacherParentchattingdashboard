@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+*{
+	margin:0;
+	padding: 0;
+}
+/*top_navbar*/
+
+
+#navbar{
+
+	background-image:url("../images/topbar.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+/*	
+	background-image: url("../images/topbar.jpg");
+	width: 100%;*/
+	position: fixed;
+	z-index: 2;
+	/*box-shadow: 1px 0px 5px 4px #028560;*/
+	box-shadow:0px 4px 8px -2px #000;
+
+
+}
+#navbar img{
+
+	width: 80px;
+	margin-left: 40px;
+
+}
+
+#mainContainer{
+	margin-top: 138px;
+	/*background-color: #33cbce;*/
+
+}
+
+#navbar p:nth-child(1){
+    color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+    font-size: 40px;
+    margin-top: 15px;
+    /*text-align: justify;*/
+    margin-left: 30px;
+}
+
+#navbar p:nth-child(2){
+	position: absolute;
+	font-size: 40px;
+	color: #212529;
+	top: 19px;
+	right: 21px;
+	cursor: pointer;
+}
+
+#menu{
+	position: absolute;
+    left: 11px;
+    top: 0;
+    font-size: 28px;
+    color: #212529;
+    cursor: pointer;
+    line-height: 67.5px;
+    cursor: pointer;
+    display: none;
+}
+
+#logout{
+	background-color: #e9ebee;
+    color: #46629e;
+    padding: 18px 66px;
+    position: absolute;
+    right: 21px;
+    top: 18px;
+    display: none;
+    cursor: pointer;
+    /*cursor: pointer;*/
+}
+
+/*end of top_navbar*/
+
+
+
+
+/*side navbar*/
+
+#side_navbar{
+	background-color: #33cbce;
+	height: 90vh;
+	width: 100%;
+	padding: 0;
+	margin-top:106px;
+
+}
+
+#side_navbar p{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 14px;
+	color: #212529;
+	padding-bottom: 9px;
+}
+
+#side_navbar ul li{
+	list-style: none;
+	padding: 10px 5px;
+	margin-bottom: 5px;
+}
+
+#side_navbar ul li a{
+	margin-left: 28px;
+	text-decoration: none;
+    color: #212529;
+	margin-top: 5px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bolder;
+
+}
+
+#side_navbar ul li:hover,.active{
+	background-color: #eb5624;
+	border-right: 5px solid   #fabe58;
+	box-shadow:0px 4px 8px -2px #000;
+	color: #ffffff;
+	font-weight: bold;
+
+}
+
+
+#side_navbar ul li a:hover,.active a{
+	color: #ffffff;
+    font-family: 'Questrial', sans-serif;
+	
+
+}
+
+.closebtn{
+	text-decoration: none;
+	font-size: 25px;
+	position: absolute;
+	right: 5px;
+	top: 0;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	 display: none;
+}
+
+.closebtn:hover{
+	color: #212529;
+}
+
+#getEmail{
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+	margin-top: 20px;
+}
+/*side navbar end*/
+
+
+/*media query*/
+@media(max-width: 768px)
+{
+	#side_navbar{
+		width: 0;
+	    z-index: 3;
+	    overflow-x: hidden;
+	    transition: 0.9s;
+	    position: fixed;
+	    margin-top: 0;
+	    height: 100vh;
+
+	}
+
+	#navbar img{
+
+		width: 50px;
+		margin-left: 20px;
+
+	}
+
+
+	#navbar p:nth-child(1){
+	    font-size: 30px;
+	    margin-top: 24px;
+	    text-align: center;
+	    margin-left: 0px;
+	}
+
+	#navbar p:nth-child(1) i{
+	   display: none;
+	}
+	#navbar p:nth-child(2) {
+    top: 14px;
+   }
+
+	[class*='col-']{
+		margin-top: 15px;
+	}
+
+	.closebtn{
+	    display: block;
+	}
+	#menu{
+		display: block;
+		margin-top: 12px;
+	}
+}
+
+@media(max-width: 1024px)
+{
+	#side_navbar ul li a {
+	    margin-left: 27px;
+	}
+
+	#side_navbar ul li{
+		padding: 10px 0px;
+	}
+}
+
+@media(max-width: 350px)
+{
+
+#navbar p:nth-child(1){
+   	
+   	padding: 0 22px;
+   	font-size: 15px;
+   	font-size: 20px;
+   }
+   #navbar img{
+   	width: 40px;
+   }
+   #menu{
+   	margin-top: 8px;
+   }
+
+   #navbar p:nth-child(2) {
+    top: 12px;
+   }
+
+   #logout{
+
+	   padding: 11px 66px;
+		top: 17px;
+	}
+
+
+
+#mainContainer{
+	margin-top: 93px;
+}
+
+}

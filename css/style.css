@@ -1,0 +1,23 @@
+nav{
+	position: fixed;
+	background: #272822;
+	width: 100%;
+	display: block;
+}
+nav header{
+	color: #99ff00;
+	font-size:2.5em;
+	font-weight: bold;
+}
+/*#mainSection{
+	position: relative;
+}*/
+#mainSection #sideBar{
+	min-width: 15%;
+	float: left;
+	position: fixed;
+	height: 100vh;
+	background-color: #42423f;
+	top: 60px;
+	left: 0;
+}

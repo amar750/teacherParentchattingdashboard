@@ -1,0 +1,169 @@
+<!--  -->
+<div class="row">
+	<div class="col-sm-12" id="mainHeader">
+		<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>  <span>Users</span>
+	</div>
+</div>
+<br>
+<br>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="common">
+			<p>Teachers</p>
+
+      <table class="table table-striped">
+        <tbody>
+          <tr ng-repeat="(k1,v1) in teacherDatas">
+            <td><span style="text-align: center;">Class : {{k1}}</span>
+              <ul ng-repeat="(k2,v2) in v1" style="margin-left: 15px;">
+                  <li>Section: {{k2}}</li>
+                  <ul ng-repeat="(k3,v3) in v2" style="margin-left: 22px;">
+                   <li>{{$index+1}}
+                      <ul style="margin-left: 25px;">
+                        <li>email: {{v3.email}}</li>
+                        <li>name: {{v3.name}}</li>
+                        <!--<li>password: {{v3.password}}</li>-->
+                      </ul>
+                   </li>
+                  </ul>
+              </ul>
+            </td>
+            
+          </tr>         
+        </tbody>
+      </table>
+
+
+			<i style="color: #eb5624;" class="fa fa-plus-circle" aria-hidden="true" data-toggle="modal" data-target="#addTeacher" onclick="load()"></i>
+		</div>
+	</div> 
+	<div class="col-sm-6">
+		<div class="common">
+			<p>Parent</p>
+     <table class="table table-striped">
+        <tbody>
+          <tr ng-repeat="(k1,v1) in parentDatas">
+            <td><span style="text-align: center;">Class : {{k1}}</span>
+              <ul ng-repeat="(k2,v2) in v1" style="margin-left: 15px;">
+                  <li>Section: {{k2}}</li>
+                  <ul ng-repeat="(k3,v3) in v2" style="margin-left: 22px;">
+                   <li>{{$index+1}}
+                      <ul style="margin-left: 25px;">
+                        <li>email: {{v3.email}}</li>
+                        <li>name: {{v3.name}}</li>
+                        <!--<li>password: {{v3.password}}</li>-->
+                      </ul>
+                   </li>
+                  </ul>
+              </ul>
+              
+            </td>
+            
+          </tr>         
+        </tbody>
+      </table>
+			<i style="color: #eb5624;" class="fa fa-plus-circle" aria-hidden="true" data-toggle="modal" data-target="#addParent"></i>
+		</div>
+		
+	</div>
+</div>
+
+
+<!-- ********modal******** -->
+
+<!-- Modal for Teacher -->
+<div id="addTeacher" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        
+          <form>
+
+             <div class="form-group">
+              <input type="text" placeholder="Enter User Name.." class="form-control" id="t_userName" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="number" placeholder="Enter class.." class="form-control" id="t_class" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="Enter section.." class="form-control" id="t_section" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="email" placeholder="Enter email.." class="form-control" id="t_email" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="password" placeholder="Enter password.." class="form-control" id="t_pass" value="">
+            </div>
+
+            <div class="form-group">
+             <button type="button" class="btn btn-warning btn-md" onclick="t_send()">Send</button>
+            </div>
+          </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal for Parent -->
+
+<div id="addParent" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        
+           <form>
+
+             <div class="form-group">
+              <input type="text" placeholder="Enter User Name.." class="form-control" id="p_userName" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="number" placeholder="Enter class.." class="form-control" id="p_class" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="Enter section.." class="form-control" id="p_section" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="email" placeholder="Enter email.." class="form-control" id="p_email" value="">
+            </div>
+
+            <div class="form-group">
+              <input type="password" placeholder="Enter password.." class="form-control" id="p_pass" value="">
+            </div>
+
+            <div class="form-group">
+             <button type="button" class="btn btn-warning btn-md" onclick="p_send()">Send</button>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ********modal end******** -->
+
+

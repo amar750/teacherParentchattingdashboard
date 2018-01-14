@@ -1,0 +1,148 @@
+<div class="row">
+	<div class="col-sm-12" id="mainHeader">
+		<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>  <span>Class Notice Messages</span>
+	</div>
+</div>
+<br>
+<br>
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="classNB">
+			<p>Class Messages</p><hr>
+	
+			<ul ng-repeat="(k1,v1) in classMessages">
+				<li style="margin-left: 20px;"> class : {{k1}}
+					<ul ng-repeat="(k2,v2) in v1">
+						<li style="margin-left: 40px;">Section : {{k2}}
+							<table class="table table-striped">
+							    <tbody>
+							      <tr ng-repeat="v3 in v2">
+							        <td> {{$index+1}}.</td>
+					       		    <td style="width:100%; display:inline-block;"><i class="fa fa-envelope" aria-hidden="true" style="color: #eb5624;"></i> :-{{v3.post}} <br>  posted by <span style="color: green; font-weight: bold;">{{v3.postedBy}}</span> <span style="font-size: 12px; font-weight: bold;">{{v3.timeStamp | date:'dd.MM.y'}}</span>,  <span style="font-size: 12px; font-weight: bold;">{{v3.timeStamp | date:'hh:mm:ss a'}}</span></td>
+							        <td> <button class="btn btn-info btn-sm"  type="button" data-toggle="modal" data-target="#myModalEdit" ng-click="selectPost(v3.$id)">Edit</button> </td>
+							        <td> <button class="btn btn-danger btn-sm" type="button" data-toggle="modal" data-target="#myModalDelete" ng-click="deletePost(v3)">Delete</button> </td>
+							      </tr>		      
+							    </tbody>
+						  	</table>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- Modal for Delete -->
+ <div id="myModalDelete" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!--Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <!-- <h4 class="modal-title">Are You Sure?</h4> -->
+      </div>
+      <div class="modal-body">
+        <h4 style="color: red">Are you sure, You want to delete this post?</h4>
+        <br/>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-default pull-left" data-dismiss="modal" ng-click="deletePostConfirm(deletedPost)">Yes</button>	      	
+        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- **********edit****************** -->
+
+
+
+
+<div id="myModalEdit" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <!-- <h4 class="modal-title">Edit Product</h4> -->
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+		    <!-- <label for="inputProduct" class="col-sm-2 control-label">Product Name</label> -->
+		    <div class="col-sm-10">
+          <textarea class="form-control" id="inputPost" placeholder="eidt your post" ng-model="editPostData.post" rows="15" cols="200">
+            
+          </textarea>
+		      
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="editPost(editPostData.$id)">Done</button>
+		    </div>
+		  </div>
+		</form>
+      </div>
+      <div class="modal-footer">
+      	
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+
+<!-- Modal for edit-->
+
+<!-- <div id="myModalEdit" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+     
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+		   
+		    <div class="col-sm-10">
+
+		    	 <textarea class="form-control" id="inputPost" placeholder="eidt your post" ng-model="editPostData.post" rows="15" cols="200">
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="editPost(editPostData.$id)">Done</button>
+		    </div>
+		  </div>
+		</form>
+      </div>
+      <div class="modal-footer">
+      	
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div> -->

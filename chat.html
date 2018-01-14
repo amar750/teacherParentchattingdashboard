@@ -1,0 +1,29 @@
+
+<div class="row">
+	<div class="col-sm-12" id="mainHeader">
+		<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>  <span>Chats</span>
+	</div>
+</div>
+<br>
+<br>
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="chatBoard">
+			<p>Conversations</p>
+			<br>
+			<table class="table table-striped">
+			    <tbody  class="contents">
+			      <tr ng-repeat="(x,y) in datas">
+			        <td> {{$index+1}}.</td>
+	       		    <td><span style="font-weight:bold; font-size: 18px;">{{x}}</span>
+	       		    	<div ng-repeat="(z,l) in y" style="margin-top: 15px;">
+	       		    		<p style="font-size: 14px;"><i class="fa fa-commenting" aria-hidden="true"></i> {{l.message}}</p>
+	       		    	</div> 
+	       		    </td>
+			      </tr>		      
+			    </tbody>
+			</table>
+		</div>
+	</div>
+</div>

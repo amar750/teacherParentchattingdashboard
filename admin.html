@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="ogcs">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="css/addUser.css">
+	<link rel="stylesheet" type="text/css" href="css/classNB.css">
+	<link rel="stylesheet" type="text/css" href="css/instituteNB.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/pagination.css">
+
+</head>
+<body style="background-color: #0e9295;">
+
+
+
+<div id="navbar">
+	<p><img src="images/logo.png">
+	  <span style="padding-left: 10px; font-size: -webkit-xxx-large;">Governance One</span></p>
+	<!-- <h4 style="display: none;">OGCS</h4> -->
+	<p><i class="fa fa-ellipsis-v" aria-hidden="true" id="openLog" style="color: #ffffff;"></i></p>
+	<span id="logout">Log Out</span>
+	<!-- <i class="fa fa-bars" id="menu" onclick="openNav()"></i> -->
+</div>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2" id="side_navbar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<h3 id="getEmail">Admin</h3><hr>
+			<ul>
+				<li ng-class="{active: $route.current.activetab == 'dashboard'}"><a href="#/!">Dashboard</a></li>
+				<li ng-class="{active: $route.current.activetab == 'addUser'}"><a href="#!/addUser">Add User</a></li>
+				<li ng-class="{active: $route.current.activetab == 'chat'}"><a href="#!/chat">Chat</a></li>
+				<li ng-class="{active: $route.current.activetab == 'classNB'}"><a href="#!/classNB">Class Message Board</a></li>
+				<li ng-class="{active: $route.current.activetab == 'instituteNB'}"><a href="#!instituteNB">Institute Message Board</a></li>
+			</ul>
+		</div>
+		<div class="col-md-10" id="mainContainer">
+			<div class="container">
+				<div ng-view></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<img src="images/bottomLogo.gif" class="img-responsive"  style="position: fixed; width: 300px; height: auto; left: 10px;bottom: 0;">
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script type="text/javascript" src="js/firebase.js"></script>
+
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.min.js"></script> -->
+
+
+
+<script type="text/javascript" src="lib/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/pagination.lib.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script type="text/javascript" src="lib/js/angular.min.js"></script>
+<script type="text/javascript" src="lib/js/angular-route.min.js"></script>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script> -->
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/admin.js"></script>
+<script type="text/javascript" src="controller/admin.controller.js"></script>
+<script type="text/javascript" src="js/addUser.js"></script>
+<!-- <script type="text/javascript" src="js/classNBPagiantion.js"></script> -->
+<script type="text/javascript" src="constant/constant.js"></script>
+<script type="text/javascript" src="js/pagination.js"></script>
+<!-- <script type="text/javascript" src="services/parent.service.js"></script>
+<script type="text/javascript" src="js/teacher.service.js"></script> -->
+</body>
+</html>

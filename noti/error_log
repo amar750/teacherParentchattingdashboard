@@ -1,0 +1,78 @@
+[21-Dec-2017 15:06:43 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/pyplynco/public_html/goveranceOne/noti/init.php on line 9
+[21-Dec-2017 15:06:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/pyplynco/public_html/goveranceOne/noti/insert.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 8
+[21-Dec-2017 19:39:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::bind_params() in /home/pyplynco/public_html/goveranceOne/noti/insert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:39:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::bind_params() in /home/pyplynco/public_html/goveranceOne/noti/insert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:42:10 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:43:38 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:44:00 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:44:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/pyplynco/public_html/goveranceOne/noti/insert.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 8
+[21-Dec-2017 19:46:14 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:46:41 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:47:39 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:47:56 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:48:19 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:52:56 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:53:37 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:54:16 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:54:50 UTC] PHP Warning:  Wrong parameter count for mysqli_stmt::bind_param() in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:54:53 UTC] PHP Warning:  Wrong parameter count for mysqli_stmt::bind_param() in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[21-Dec-2017 19:55:12 UTC] PHP Warning:  Wrong parameter count for mysqli_stmt::bind_param() in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 9
+[22-Dec-2017 01:46:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/pyplynco/public_html/goveranceOne/noti/insert.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 8
+[22-Dec-2017 01:46:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/pyplynco/public_html/goveranceOne/noti/insert.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 8
+[22-Dec-2017 11:06:44 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 10
+[22-Dec-2017 11:07:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pyplynco/public_html/goveranceOne/noti/insert.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 10
+[22-Dec-2017 11:07:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pyplynco/public_html/goveranceOne/noti/insert.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 10
+[22-Dec-2017 11:08:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pyplynco/public_html/goveranceOne/noti/insert.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 10
+[22-Dec-2017 11:08:25 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pyplynco/public_html/goveranceOne/noti/insert.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 10
+[22-Dec-2017 11:08:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pyplynco/public_html/goveranceOne/noti/insert.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 10
+[22-Dec-2017 11:09:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pyplynco/public_html/goveranceOne/noti/insert.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pyplynco/public_html/goveranceOne/noti/insert.php on line 10
+[26-Dec-2017 10:17:49 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home/pyplynco/public_html/goveranceOne/noti/send_notification.php on line 12
+[26-Dec-2017 22:05:41 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 3
+[26-Dec-2017 22:06:48 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 3
+[26-Dec-2017 22:07:46 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 2
+[27-Dec-2017 05:25:11 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home/pyplynco/public_html/goveranceOne/noti/send_notification.php on line 12
+[27-Dec-2017 05:57:49 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 05:58:57 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 05:59:09 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 05:59:36 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 06:00:23 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 06:40:16 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 07:48:03 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 07:51:17 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57
+[27-Dec-2017 07:51:19 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pyplynco/public_html/goveranceOne/noti/index.php on line 57

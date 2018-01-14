@@ -1,0 +1,44 @@
+/*@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);*/
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+
+#mainHeader{
+
+	background-color: #eb5624;
+	padding:10px;
+	/*box-shadow: -1px 5px 11px -3px #BDC3C7;*/
+	box-shadow:0px 4px 8px -2px #000;
+	/*border:1px solid #ffffff;*/
+}
+#mainHeader i{
+	font-size: 23px;
+	color: #ffffff;
+
+}
+#mainHeader span{
+	font-size: 23px;
+	/*font-family: 'Julius Sans One', sans-serif;*/
+	font-family: 'Questrial', sans-serif;
+	color: #ffffff;
+}
+
+#common{
+	/*background-color: #FBFCFC;*/
+	padding: 20px 0;
+	/*box-shadow: -6px 5px 16px #BDC3C7;*/
+	box-shadow:0px 4px 8px -2px #000;
+	background-color: #FABE58;
+
+	text-align: center;
+	/*width: 100%;*/
+}
+
+/*#common:hover{
+	background-color: #E8F6F3;
+	padding: 20px 0;
+*/
+
+	/*box-shadow: -6px 5px 16px #BDC3C7;*/
+	
+	/*width: 100%;*/
+/*}*/
